@@ -3,5 +3,4 @@ The game was written with the aim of practicing multithreading, but in general, 
 
 
 
-
-https://user-images.githubusercontent.com/72043323/137601990-4b71f095-9cbc-4ba9-9d41-369f231d78a8.mp4
+https://user-images.githubusercontent.com/72043323/137602001-117d9aec-4f0e-4620-baff-6ba75ee7c5d0.mp4
