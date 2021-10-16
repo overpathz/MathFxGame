@@ -41,8 +41,7 @@ public class PrimaryController {
         executorService.execute(()-> {
             if (textEntry.getText().equals(randomQuestion.correctAnswer)) {
                 afterAnswer("RIGHT ANSWER", "green");
-                rightAnswers++;
-                timer.setText(String.valueOf(rightAnswers));
+                timer.setText(String.valueOf(++rightAnswers));
             } else {
                 afterAnswer("FAIL", "red");
             }
