@@ -1,3 +1,5 @@
+package controller;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -11,6 +13,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import util.Buffer;
+import util.Question;
 
 public class PrimaryController {
 
@@ -41,8 +45,7 @@ public class PrimaryController {
         executorService.execute(()-> {
             if (textEntry.getText().equals(randomQuestion.correctAnswer)) {
                 afterAnswer("RIGHT ANSWER", "green");
-                rightAnswers++;
-                timer.setText(String.valueOf(rightAnswers));
+                timer.setText(String.valueOf(++rightAnswers));
             } else {
                 afterAnswer("FAIL", "red");
             }

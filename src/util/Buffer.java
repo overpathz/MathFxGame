@@ -1,3 +1,5 @@
+package util;
+
 import javafx.stage.Stage;
 
 public final class Buffer {
